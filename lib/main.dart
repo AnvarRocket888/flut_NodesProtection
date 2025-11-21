@@ -1,11 +1,14 @@
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
-import 'package:drop_cost_ios/core/services/sdk_initializer.dart';
+import 'package:nodesprotection/core/services/sdk_initializer.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'firebase_options.dart';
 import 'package:flutter/cupertino.dart';
 import 'core/screens/splash_screen.dart';
+
+// import 'package:nodesprotection/core/screens/no_internet_connection.dart';
+// import 'package:nodesprotection/core/screens/push_request_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

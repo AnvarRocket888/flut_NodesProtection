@@ -45,7 +45,7 @@ class _PushRequestScreenState extends State<PushRequestScreen> {
     return Scaffold(
       body: Container(
         decoration:
-            const BoxDecoration(gradient: AppConfig.pushRequestGradient),
+            AppConfig.pushRequestDecoration,
         child: LayoutBuilder(
           builder: (context, constraints) {
             return Column(
@@ -61,7 +61,7 @@ class _PushRequestScreenState extends State<PushRequestScreen> {
                       height: isLandscape ? 160 : 250,
                       child: const Image(
                         image: AssetImage(
-                          'assets/images/Logo.png',
+                          'assets/images/Logo.webp',
                         ),
                       ),
                     ),

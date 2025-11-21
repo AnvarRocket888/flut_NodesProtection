@@ -1,4 +1,4 @@
-import 'package:drop_cost_ios/core/app_config.dart';
+import 'package:nodesprotection/core/app_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:webview_flutter_platform_interface/webview_flutter_platform_interface.dart';

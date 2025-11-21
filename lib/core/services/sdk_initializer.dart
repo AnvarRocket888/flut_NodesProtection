@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io' show Platform;
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:appsflyer_sdk/appsflyer_sdk.dart';
-import 'package:drop_cost_ios/app.dart';
+import 'package:nodesprotection/app.dart';
 import 'package:flutter/services.dart';
 import '../../firebase_options.dart';
 import '../app_config.dart';

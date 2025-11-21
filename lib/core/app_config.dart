@@ -14,23 +14,31 @@ class AppConfig {
 //UI Settings
 // Splash Screen
   static const Decoration splashDecoration = const BoxDecoration(
-    gradient: AppConfig.splashGradient,
+    image: DecorationImage(
+		image: AssetImage('assets/images/bg.webp'),
+		fit: BoxFit.cover,
+		alignment: Alignment.center,
+	),
   );
 
   static const Gradient splashGradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [
-      Color(0xFF30225C),
+      Color(0xFFFEC300),
       Color(0xFF150B34),
     ],
   );
-  static const Color loadingTextColor = Color(0xFFFFFFFF);
-  static const Color spinerColor = Color(0xFCFFFFFF);
+  static const Color loadingTextColor = Color(0xFFFEC300);
+  static const Color spinerColor = Color(0xFFFEC300);
 // Push Request Screen Settings
 
   static const Decoration pushRequestDecoration = const BoxDecoration(
-    gradient: AppConfig.pushRequestFadeGradient,
+    image: DecorationImage(
+		image: AssetImage('assets/images/bg.webp'),
+		fit: BoxFit.cover,
+		alignment: Alignment.center,
+	),
   );
 
   static const Gradient pushRequestGradient = LinearGradient(
@@ -49,21 +57,25 @@ class AppConfig {
       Color.fromARGB(135, 0, 0, 0),
     ],
   );
-  static const Color titleTextColor = Color(0xFFFFFFFF);
-  static const Color subtitleTextColor = Color(0x80FDFDFD);
+  static const Color titleTextColor = Color(0xFFFECC04);
+  static const Color subtitleTextColor = Color(0xFFFEC300);
 
-  static const Color yesButtonColor = Color(0xFFFCB301);
+  static const Color yesButtonColor = Color(0xFFFEC300);
   static const Color yesButtonShadowColor = Color(0xA3D1710B);
-  static const Color yesButtonTextColor = Color(0xFFFFFFFF);
-  static const Color skipTextColor = Color(0x7DF9F9F9);
+  static const Color yesButtonTextColor = Color(0xFF852203);
+  static const Color skipTextColor = Color(0xFFFEC300);
 
   // Путь к логотипу, если не находит добавить в pubspec.yaml
-  static const String logoPath = 'assets/images/Logo.png';
+  static const String logoPath = 'assets/images/Logo.webp';
 
   // экран ошибки подключения интернета
   // Splash Screen
   static const Decoration errorScreenDecoration = const BoxDecoration(
-    gradient: AppConfig.errorScreenGradient,
+    image: DecorationImage(
+		image: AssetImage('assets/images/bg.webp'),
+		fit: BoxFit.cover,
+		alignment: Alignment.center,
+	),
   );
 
   static const Gradient errorScreenGradient = LinearGradient(
@@ -74,15 +86,21 @@ class AppConfig {
       Color(0xFF150B34),
     ],
   );
-  static const Color errorScreenTextColor = Color(0xFFFFFFFF);
-  static const Color errorScreenIconColor = Color(0xFCFFFFFF);
+  static const Color errorScreenTextColor = Color(0xFFFEC300);
+  static const Color errorScreenIconColor = Color(0xFFFEC300);
 
 // экран загрузки WebGL
   static String webGLEndpoint =
-      'https://play.unity.com/api/v1/games/game/221254f9-061f-4ed2-9578-44df88a3e5fe/build/latest/frame';
+      'https://play.unity.com/api/v1/games/game/43b43e61-cd11-4ce8-861a-8b091f001273/build/latest/frame';
 
   static const Decoration webGLLoadingDecoration = const BoxDecoration(
-    gradient: AppConfig.splashGradient,
+    // gradient: AppConfig.splashGradient,
+    image: DecorationImage(
+		image: AssetImage('assets/images/bg.webp'),
+		fit: BoxFit.cover,
+		alignment: Alignment.center,
+	),
+
   );
   static const String webGLLoadingLogoPath = 'assets/images/Logo.png';
   static const Gradient webGLLoadingGradient = LinearGradient(
@@ -93,6 +111,6 @@ class AppConfig {
       Color(0xFF150B34),
     ],
   );
-  static const Color webGLLoadingTextColor = Color(0xFFFFFFFF);
-  static const Color webGLSpinerColor = Color(0xFCFFFFFF);
+  static const Color webGLLoadingTextColor = Color(0xFFFEC300);
+  static const Color webGLSpinerColor = Color(0xFFFEC300);
 }
